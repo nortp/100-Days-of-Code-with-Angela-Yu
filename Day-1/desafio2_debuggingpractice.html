@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Practice</title>
+</head>
+<body>
+    <a href="day1.html">Voltar</a>
+    
+    <h2>Debugging Practice</h2>
+        <p>Look at the code in the code editor. There are errors on all 5 lines of code. Fix the code so that it runs without errors.</p>
+        <p>Try to run the code and debug each line using the error messages and feedback.</p>
+    <h3>Example Output</h3>
+    <img src="example-output_debuggingpractice.png" alt="">
+    <p>-----------------------------------------------------------------------------------------</p>
+    <h2>Minha Solução</h2>
+    <ul>
+        <li>Erro linha 3:</li>
+            <pre><code>
+            line 3
+            print(Notes from Day 1")
+                                  ^
+            SyntaxError: unterminated string literal (detected at line 3)
+            </code></pre>
+        <p><strong>Solução:</strong> inserir <strong>aspas duplas</strong> antes da palavra 'Notes' dentro dos parenteses</p>
+    </ul>
+    <hr>
+    <ul>
+        <li>Erro linha 4:</li>
+            <pre><code>
+            line 4
+            print("The print statement is used to output strings")
+            IndentationError: unexpected indent
+            </code></pre>
+        <p><strong>Solução:</strong> remover espaço antes de <strong>print</strong></p>
+    </ul>
+    <hr>
+    <ul>
+        <li>Erro linha 5:</li>
+            <pre><code>
+            line 5
+            print("Strings are strings of characters"
+                 ^
+            SyntaxError: '(' was never closed
+            </code></pre>
+        <p><strong>Solução:</strong> adicionar um parentese ao final da instrução da linha 5</p>
+    </ul>
+    <hr>
+    <ul>
+        <li>Erro linha 6:</li>
+            <pre><code>
+            line 6, in <module>
+            priint("String Concatenation is done with the + sign")
+            ^^^^^^
+            NameError: name 'priint' is not defined. Did you mean: 'print'?
+            </code></pre>
+        <p><strong>Solução:</strong> ajustar o nome da função <strong>print</strong> </p>
+    </ul>
+    <hr>
+    <ul>
+        <li>Erro linha 7:</li>
+            <pre><code>
+            line 7
+            print(("New lines can be created with a \ and the letter n")
+                  ^
+            SyntaxError: '(' was never closed
+            </code></pre>
+        <p><strong>Solução:</strong> remover um dos <strong>parenteses 'adicionais'</strong></p>
+    </ul>
+    <hr>
+    <ul>
+        <li>Erro bônus (não sei porque)</li>
+            <pre><code>
+            SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+            print(("New lines can be created with a \ and the letter n")
+            </code></pre>
+        <p><strong>Solução:</strong> mudei o caracter '\' para o nome em inglês de contrabarra: backslash.<br>
+        
+        ps: Mesmo que aparentemente este, não tenha efeito na efetividade do código.
+        </p>
+    </ul>
+</body>
+</html>
