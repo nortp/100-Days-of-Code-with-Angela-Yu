@@ -16,3 +16,7 @@ a {
     align-items: center;
     justify-content: center;    
 }
+
+img {
+    margin: 10px 0 10px 0;
+}
