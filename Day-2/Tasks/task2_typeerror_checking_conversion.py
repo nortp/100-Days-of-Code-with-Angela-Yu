@@ -8,4 +8,4 @@ print(type(3.14)) #tipo flutuante, ou para números reais (com vírgula)
 print(type(True)) #tipo BOOLEAN (verdadeiro ou falso)
 
 #PAUSE 3. Usar a conversão
-print("Number of letters in your name: " +  str(len(input("Enter your name:\n"))))
+print("Number of letters in your name: ",  len(input("Enter your name:\n")))
